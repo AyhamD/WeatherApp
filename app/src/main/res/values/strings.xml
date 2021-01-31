@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="URL_id">https://api.met.no/weatherapi/locationforecast/1.9/?lat=60.10;lon=9.58</string>
+    <string name="button">Button</string>
+    <string name="weather_app">Weather APP</string>
+    <string name="refresh">Refresh</string>
+    <string name="windspeed">WindSpeed</string>
+    <string name="precipitation">precipitation</string>
+    <string name="cloudiness">cloudiness</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+</resources>
