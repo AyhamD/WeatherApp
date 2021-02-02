@@ -1,5 +1,7 @@
 package com.example.weatherapp;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.util.Log;
 import android.util.Pair;
 import android.util.Xml;
@@ -109,6 +111,7 @@ public class XmlParser {
         parser.require(XmlPullParser.END_TAG, null, "cloudiness");
         return cloudiness;
     }
+    @TargetApi(Build.VERSION_CODES.ECLAIR)
     private Pair<String,String> readPrecipitation(XmlPullParser parse) throws IOException, XmlPullParserException {
         parse.require(XmlPullParser.START_TAG,null,"precipitation");
         String minPrecipitation = parse.getAttributeValue(null,"minvalue");
